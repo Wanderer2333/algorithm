@@ -4,7 +4,7 @@ package com.algorithm.demo.remove_duplicates_from_sorted_array;
 public class Solution {
     public int removeDuplicates(int[] nums) {
         if (null == nums || nums.length == 0) {
-            return -1;
+            return 0;
         }
         if (nums.length == 1) {
             return 1;
@@ -19,6 +19,6 @@ public class Solution {
             }
             index++;
         }
-        return distinctedIndex;
+        return ++distinctedIndex;
     }
 }
