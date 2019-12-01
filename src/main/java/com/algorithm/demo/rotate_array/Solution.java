@@ -1,11 +1,16 @@
 package com.algorithm.demo.rotate_array;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
 class Solution {
     public void rotate(int[] nums, int k) {
         k %=nums.length;
         reverse(nums,0,nums.length -1);
         reverse(nums,0,k -1);
-        reverse(nums,k,nums.length -1);
+        reverse(nums, k, nums.length - 1);
 
     }
 
