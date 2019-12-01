@@ -1,10 +1,5 @@
 package com.algorithm.demo.rotate_array;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
 class Solution {
     public void rotate(int[] nums, int k) {
         k %=nums.length;
